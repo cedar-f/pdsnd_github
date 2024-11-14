@@ -253,8 +253,13 @@ def show_raw_data(df):
 
 def main():
     while True:
+        # get filters from user
         cities, months, days = get_filters()
+
+        # load data depend on filters
         df = load_data(cities, months, days)
+
+        # show data loaded
         show_raw_data(df)
         time_stats(df)
         input("Press any key to continue...\n" + "-" * 30)
@@ -263,7 +268,6 @@ def main():
         trip_duration_stats(df)
         input("Press any key to continue...\n" + "-" * 30)
         user_stats(df)
-
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
