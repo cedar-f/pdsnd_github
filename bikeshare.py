@@ -262,11 +262,11 @@ def main():
         # show data loaded
         show_raw_data(df)
         time_stats(df)
-        input("Press any key to continue...\n" + "-" * 30)
+        input("Press any key to continue...\n" + "-" * 40)
         station_stats(df)
-        input("Press any key to continue...\n" + "-" * 30)
+        input("Press any key to continue...\n" + "-" * 40)
         trip_duration_stats(df)
-        input("Press any key to continue...\n" + "-" * 30)
+        input("Press any key to continue...\n" + "-" * 40)
         user_stats(df)
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
